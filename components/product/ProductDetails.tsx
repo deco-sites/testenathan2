@@ -21,6 +21,7 @@ import type { ProductDetailsPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import Image from "apps/website/components/Image.tsx";
 import ProductSelector from "./ProductVariantSelector.tsx";
+import { SmartNotifyStock } from "../../islands/SmartNotifyStock.tsx";
 
 export interface Props {
   /** @title Integration */
@@ -40,8 +41,8 @@ export interface Props {
      */
     name?: "concat" | "productGroup" | "product";
   };
-
-  id?: string
+  id?: string;
+  maxStock: number;
 }
 
 const WIDTH = 360;
@@ -64,7 +65,9 @@ function NotFound() {
   );
 }
 
-function ProductInfo({ page, layout, id }: { page: ProductDetailsPage } & Props) {
+function ProductInfo(
+  { page, layout, id, maxStock }: { page: ProductDetailsPage } & Props,
+) {
   const platform = usePlatform();
   const {
     breadcrumbList,
@@ -114,6 +117,10 @@ function ProductInfo({ page, layout, id }: { page: ProductDetailsPage } & Props)
           </span>
         </h1>
       </div>
+      <SmartNotifyStock
+        available={availability}
+        maxStock={maxStock}
+      />
       {/* Prices */}
       <div class="mt-4">
         <div class="flex flex-row gap-2 items-center">

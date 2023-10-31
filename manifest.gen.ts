@@ -50,8 +50,10 @@ const manifest = {
     "deco-sites/testenathan2/sections/Images/ShoppableBanner.tsx": $$$$$$3,
     "deco-sites/testenathan2/sections/Links/LinkTree.tsx": $$$$$$21,
     "deco-sites/testenathan2/sections/Links/Shortcuts.tsx": $$$$$$22,
-    "deco-sites/testenathan2/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$16,
-    "deco-sites/testenathan2/sections/Miscellaneous/CookieConsent.tsx": $$$$$$17,
+    "deco-sites/testenathan2/sections/Miscellaneous/CampaignTimer.tsx":
+      $$$$$$16,
+    "deco-sites/testenathan2/sections/Miscellaneous/CookieConsent.tsx":
+      $$$$$$17,
     "deco-sites/testenathan2/sections/Newsletter/Newsletter.tsx": $$$$$$23,
     "deco-sites/testenathan2/sections/Product/ProductDetails.tsx": $$$$$$15,
     "deco-sites/testenathan2/sections/Product/ProductShelf.tsx": $$$$$$13,
