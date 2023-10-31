@@ -5,10 +5,10 @@ export interface propsCurrentStock {
 
 // FUNÇÃO PARA STOCK
 
-// TODO: Criar componente para definir local que irá aparecer a notificação (Local da página como notify ou texto e em qual local)
-// TODO: Entender como funciona para aparecer editável no painel da Deco.
+// TODO: Criar tipo de notificação: Texto ou Push
+// TODO: Deixar o componente em bloco, para arrastar para qualquer lugar da página.
 
-export function SmartNotifyStock(props: propsCurrentStock) {
+function SmartNotifyStock(props: propsCurrentStock) {
   // Construir uma chave única com base na URL do produto
   const currentURL = window.location.href;
   const pageKey = `page_${currentURL}`;
@@ -44,3 +44,5 @@ export function SmartNotifyStock(props: propsCurrentStock) {
     return <></>;
   }
 }
+
+export default SmartNotifyStock;

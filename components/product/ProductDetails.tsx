@@ -21,7 +21,7 @@ import type { ProductDetailsPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import Image from "apps/website/components/Image.tsx";
 import ProductSelector from "./ProductVariantSelector.tsx";
-import { SmartNotifyStock } from "../../islands/SmartNotifyStock.tsx";
+import SmartNotifyStock from "../../islands/SmartNotifyStock.tsx";
 
 export interface Props {
   /** @title Integration */
@@ -379,10 +379,12 @@ function Details(props: { page: ProductDetailsPage } & Props) {
   );
 }
 
-function ProductDetails({ page, layout, id }: Props) {
+function ProductDetails({ page, layout, id, maxStock }: Props) {
   return (
     <div class="container py-0 sm:py-10">
-      {page ? <Details page={page} layout={layout} id={id} /> : <NotFound />}
+      {page
+        ? <Details page={page} layout={layout} id={id} maxStock={maxStock} />
+        : <NotFound />}
     </div>
   );
 }
