@@ -17,17 +17,18 @@ import * as $$$$$$10 from "./sections/Content/Benefits.tsx";
 import * as $$$$$$11 from "./sections/Product/Wishlist.tsx";
 import * as $$$$$$12 from "./sections/Product/SearchResult.tsx";
 import * as $$$$$$13 from "./sections/Product/ProductShelf.tsx";
-import * as $$$$$$14 from "./sections/Product/ProductShelfTabbed.tsx";
-import * as $$$$$$15 from "./sections/Product/ProductDetails.tsx";
-import * as $$$$$$16 from "./sections/Miscellaneous/CampaignTimer.tsx";
-import * as $$$$$$17 from "./sections/Miscellaneous/CookieConsent.tsx";
-import * as $$$$$$18 from "./sections/Social/WhatsApp.tsx";
-import * as $$$$$$19 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$20 from "./sections/Theme/Theme.tsx";
-import * as $$$$$$21 from "./sections/Links/LinkTree.tsx";
-import * as $$$$$$22 from "./sections/Links/Shortcuts.tsx";
-import * as $$$$$$23 from "./sections/Newsletter/Newsletter.tsx";
-import * as $$$$$$24 from "./sections/Header/Header.tsx";
+import * as $$$$$$14 from "./sections/Product/SmartNotifyStock.tsx";
+import * as $$$$$$15 from "./sections/Product/ProductShelfTabbed.tsx";
+import * as $$$$$$16 from "./sections/Product/ProductDetails.tsx";
+import * as $$$$$$17 from "./sections/Miscellaneous/CampaignTimer.tsx";
+import * as $$$$$$18 from "./sections/Miscellaneous/CookieConsent.tsx";
+import * as $$$$$$19 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$20 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$21 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$22 from "./sections/Links/LinkTree.tsx";
+import * as $$$$$$23 from "./sections/Links/Shortcuts.tsx";
+import * as $$$$$$24 from "./sections/Newsletter/Newsletter.tsx";
+import * as $$$$$$25 from "./sections/Header/Header.tsx";
 import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
 
@@ -43,26 +44,27 @@ const manifest = {
     "deco-sites/testenathan2/sections/Content/Logos.tsx": $$$$$$8,
     "deco-sites/testenathan2/sections/Content/Testimonials.tsx": $$$$$$7,
     "deco-sites/testenathan2/sections/Footer/Footer.tsx": $$$$$$0,
-    "deco-sites/testenathan2/sections/Header/Header.tsx": $$$$$$24,
+    "deco-sites/testenathan2/sections/Header/Header.tsx": $$$$$$25,
     "deco-sites/testenathan2/sections/Images/BannerGrid.tsx": $$$$$$4,
     "deco-sites/testenathan2/sections/Images/Carousel.tsx": $$$$$$6,
     "deco-sites/testenathan2/sections/Images/ImageGallery.tsx": $$$$$$5,
     "deco-sites/testenathan2/sections/Images/ShoppableBanner.tsx": $$$$$$3,
-    "deco-sites/testenathan2/sections/Links/LinkTree.tsx": $$$$$$21,
-    "deco-sites/testenathan2/sections/Links/Shortcuts.tsx": $$$$$$22,
+    "deco-sites/testenathan2/sections/Links/LinkTree.tsx": $$$$$$22,
+    "deco-sites/testenathan2/sections/Links/Shortcuts.tsx": $$$$$$23,
     "deco-sites/testenathan2/sections/Miscellaneous/CampaignTimer.tsx":
-      $$$$$$16,
-    "deco-sites/testenathan2/sections/Miscellaneous/CookieConsent.tsx":
       $$$$$$17,
-    "deco-sites/testenathan2/sections/Newsletter/Newsletter.tsx": $$$$$$23,
-    "deco-sites/testenathan2/sections/Product/ProductDetails.tsx": $$$$$$15,
+    "deco-sites/testenathan2/sections/Miscellaneous/CookieConsent.tsx":
+      $$$$$$18,
+    "deco-sites/testenathan2/sections/Newsletter/Newsletter.tsx": $$$$$$24,
+    "deco-sites/testenathan2/sections/Product/ProductDetails.tsx": $$$$$$16,
     "deco-sites/testenathan2/sections/Product/ProductShelf.tsx": $$$$$$13,
-    "deco-sites/testenathan2/sections/Product/ProductShelfTabbed.tsx": $$$$$$14,
+    "deco-sites/testenathan2/sections/Product/ProductShelfTabbed.tsx": $$$$$$15,
     "deco-sites/testenathan2/sections/Product/SearchResult.tsx": $$$$$$12,
+    "deco-sites/testenathan2/sections/Product/SmartNotifyStock.tsx": $$$$$$14,
     "deco-sites/testenathan2/sections/Product/Wishlist.tsx": $$$$$$11,
-    "deco-sites/testenathan2/sections/Social/InstagramPosts.tsx": $$$$$$19,
-    "deco-sites/testenathan2/sections/Social/WhatsApp.tsx": $$$$$$18,
-    "deco-sites/testenathan2/sections/Theme/Theme.tsx": $$$$$$20,
+    "deco-sites/testenathan2/sections/Social/InstagramPosts.tsx": $$$$$$20,
+    "deco-sites/testenathan2/sections/Social/WhatsApp.tsx": $$$$$$19,
+    "deco-sites/testenathan2/sections/Theme/Theme.tsx": $$$$$$21,
   },
   "apps": {
     "deco-sites/testenathan2/apps/decohub.ts": $$$$$$$$$$$0,

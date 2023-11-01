@@ -42,7 +42,9 @@ export interface Props {
     name?: "concat" | "productGroup" | "product";
   };
   id?: string;
+
   maxStock: number;
+  notifyIsActive: boolean;
 }
 
 const WIDTH = 360;
@@ -66,9 +68,12 @@ function NotFound() {
 }
 
 function ProductInfo(
-  { page, layout, id, maxStock }: { page: ProductDetailsPage } & Props,
+  { page, layout, id, maxStock, notifyIsActive }:
+    & { page: ProductDetailsPage }
+    & Props,
 ) {
   const platform = usePlatform();
+
   const {
     breadcrumbList,
     product,
@@ -117,10 +122,6 @@ function ProductInfo(
           </span>
         </h1>
       </div>
-      <SmartNotifyStock
-        available={availability}
-        maxStock={maxStock}
-      />
       {/* Prices */}
       <div class="mt-4">
         <div class="flex flex-row gap-2 items-center">
@@ -141,6 +142,7 @@ function ProductInfo(
       <div class="mt-4 sm:mt-6">
         <ProductSelector product={product} id={id} />
       </div>
+
       {/* Add to Cart and Favorites button */}
       <div class="mt-4 sm:mt-10 flex flex-col gap-2">
         {availability === "https://schema.org/InStock"
@@ -156,6 +158,7 @@ function ProductInfo(
                     discount={discount}
                     seller={seller}
                   />
+
                   <WishlistButton
                     variant="full"
                     productID={productID}
@@ -200,6 +203,11 @@ function ProductInfo(
                   discount={discount}
                 />
               )}
+              <SmartNotifyStock
+                available={availability}
+                maxStock={maxStock}
+                notifyIsActive={notifyIsActive}
+              />
             </>
           )
           : <OutOfStock productID={productID} />}
@@ -379,11 +387,19 @@ function Details(props: { page: ProductDetailsPage } & Props) {
   );
 }
 
-function ProductDetails({ page, layout, id, maxStock }: Props) {
+function ProductDetails({ page, layout, id, maxStock, notifyIsActive }: Props) {
   return (
     <div class="container py-0 sm:py-10">
       {page
-        ? <Details page={page} layout={layout} id={id} maxStock={maxStock} />
+        ? (
+          <Details
+            page={page}
+            layout={layout}
+            id={id}
+            maxStock={maxStock}
+            notifyIsActive={notifyIsActive}
+          />
+        )
         : <NotFound />}
     </div>
   );
